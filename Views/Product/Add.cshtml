@@ -1,0 +1,24 @@
+﻿@model WebApplication1_Scrum2.Models.AddProductViewModel
+@{
+
+}
+<h1>Add Product</h1>
+<form method="post" action="Add">
+    <div class="mb-3">
+        <label for="for example product title" class="form-label">Product Title</label>
+        <input type="text" class="form-control" id="for example product title" asp-for="Title" />
+    </div>
+    <div class="mb-3">
+        <label for="image" class="form-label">Product Image</label>
+        <input type="text" class="form-control" id="image" asp-for="image" />
+    </div>
+    <div class="mb-3">
+        <label for="price" class="form-label">Product Price</label>
+        <input type="number" class="form-control" id="price" asp-for="price" />
+    </div>
+    <div class="mb-3">
+        <label for="stock" class="form-label">Stock</label>
+        <input type="number" class="form-control" id="stock" asp-for="stock" />
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>

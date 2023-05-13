@@ -1,0 +1,32 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+
+@model List<WebApplication1_Scrum2.Models.AddProductViewModel>
+@{
+}
+<h2>Products List</h2>
+<table>
+    <thead>
+        <th>Id </th>
+        <th> ProductTitle</th>
+        <th>Price</th>
+        <th>Stock</th>
+        <th>Image </th> 
+        <th> </th>
+    </thead>
+    <tbody>
+        @foreach(var product in Model)
+        {
+            <tr>
+                <td>@product.Id</td>
+                <td>@product.Title</td>
+                <td>@product.price</td>
+                <td>@product.stock</td>
+                <td>@product.image</td>
+                <td><a href="Product/View/@product.Id"/> View </td>
+            </tr>
+            
+        }
+    </tbody>
+</table>
